@@ -1,0 +1,21 @@
+{
+  "name": "student-notes-sharing-system",
+  "version": "1.0.0",
+  "description": "A simple student notes sharing desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "39.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.student.notes",
+    "productName": "Student Notes Sharing System",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

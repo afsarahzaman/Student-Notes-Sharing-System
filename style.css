@@ -1,0 +1,276 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fc;
+    color: #26334a;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    background: #172b4d;
+    color: white;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.menu-title {
+    color: #aab8cf;
+    font-size: 12px;
+    margin: 0 10px 15px;
+}
+
+.menu-btn {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu-btn:hover,
+.menu-btn.active {
+    background: #315b9a;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding-top: 30px;
+    font-size: 12px;
+    color: #bdc9dc;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    min-width: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+header p,
+.form-box p {
+    color: #78849a;
+}
+
+.app-label {
+    background: #dceaff;
+    color: #2455a4;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.welcome {
+    background: #356ac3;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    margin-bottom: 12px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #dfe5ef;
+}
+
+.stat-card p {
+    color: #78849a;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    color: #356ac3;
+    margin-top: 12px;
+}
+
+.recent-box,
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #dfe5ef;
+}
+
+.recent-box h2,
+.form-box h2 {
+    margin-bottom: 15px;
+}
+
+.form-box {
+    max-width: 700px;
+}
+
+.form-box p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5ddeb;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #b5d0ff;
+    border-color: #356ac3;
+}
+
+.primary-btn {
+    background: #356ac3;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.primary-btn:hover {
+    background: #244f96;
+}
+
+.note-card {
+    background: #f7f9fd;
+    border: 1px solid #e0e7f2;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 15px;
+    overflow-wrap: anywhere;
+}
+
+.note-card h3 {
+    color: #28569c;
+    margin-bottom: 8px;
+}
+
+.note-card p {
+    margin-top: 8px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background: #d94a4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.empty-message {
+    color: #78849a;
+    padding: 15px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#searchInput {
+    margin: 10px 0 15px;
+}
+
+footer {
+    text-align: center;
+    color: #78849a;
+    font-size: 12px;
+    margin-top: 35px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}
